@@ -51,7 +51,7 @@ export const experiencesData = [
       "Currently working as a full-stack developer with expertise in React, Next.js, TypeScript, Tailwind, Prisma, and MongoDB. Open to new opportunities.",
     icon: React.createElement(FaReact),
     date: "May, 2024 - present",
-    // companyLogo: "/logos/digital-solutions.png" 
+    companyLogo: "/logos/digital-solutions.png" 
   },
 ] as const;
 
