@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  --line-color: #e5e7eb;
+}
+
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
+}
+
+.borderBlack {
+  @apply border border-black/10;
+}
+
+/* Particle Animation */
+@keyframes moveParticle {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(50px) scale(0.8);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.particle {
+  animation: moveParticle linear infinite;
+}
+
+/* Particles container animation */
+.particle:nth-child(odd) {
+  animation-duration: 5s;
+}
+
+.particle:nth-child(even) {
+  animation-duration: 6s;
+}
