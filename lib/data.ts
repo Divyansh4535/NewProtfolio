@@ -32,51 +32,49 @@ export const links = [
   },
 ] as const;
 
+
 export const experiencesData = [
   {
-    title: "Full-Stack Developer",
-    company: "Boolean AI.",
+    title: "Full-Stack Developer (MERN)",
+    company: "Softfix Technologies Pvt Ltd",
     location: "Lucknow, India",
     description:
-      "Worked as a front-end developer for 1+ years, gaining expertise in React and modern UI frameworks.",
+      "Building and maintaining scalable web applications using the MERN stack. Developed dynamic UIs with React & Next.js, built secure RESTful APIs with Node.js & Express, and managed databases with MongoDB. Improved page performance, optimized backend response times, and delivered multiple production-grade features in Agile sprints.",
     icon: React.createElement(CgWorkAlt),
-    date: "January, 2023 - April, 2024",
-    companyLogo: "/logos/tech-innovations.png" 
-  },
-  {
-    title: "Full-Stack Developer",
-    company: "Boolean AI.",
-    location: "Lucknow, India",
-    description:
-      "Currently working as a full-stack developer with expertise in React, Next.js, TypeScript, Tailwind, Prisma, and MongoDB. Open to new opportunities.",
-    icon: React.createElement(FaReact),
-    date: "May, 2024 - present",
-    companyLogo: "/logos/digital-solutions.png" 
+    date: "Jan 2024 – Present",
+    companyLogo: "/logos/tech-innovations.png",
   },
 ] as const;
 
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "EzLogistic",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "A logistics platform for real-time shipment tracking and route optimization, enhancing delivery efficiency and transparency.",
+    tags: ["React", "Next.js", "Ola Maps API", "REST API", "Tailwind"],
+    imageUrl: "/projects/ezlogistic.png", // Replace with actual path or image import
   },
   {
-    title: "rmtDev",
+    title: "Kardify - E-commerce for Auto Parts",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "An e-commerce platform for car and auto parts, with secure authentication, cart management, and seamless checkout experience.",
+    tags: ["Node.js", "Express.js", "MongoDB", "JWT", "REST API", "Payment Gateway"],
+    imageUrl: "/projects/kardify.png",
   },
   {
-    title: "Word Analytics",
+    title: "Ultraradai.com",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A radiology service platform offering appointment bookings, payment integration, and responsive design for medical services.",
+    tags: ["Next.js", "Tailwind", "Framer Motion", "Razorpay", "Responsive Design"],
+    imageUrl: "/projects/ultraradai.png",
+  },
+  {
+    title: "Gigsam.com",
+    description:
+      "A freelance service marketplace supporting real-time messaging, service listing, and interactive UI for clients and freelancers.",
+    tags: ["React", "Tailwind CSS", "Framer Motion", "EmailJS", "Responsive UI"],
+    imageUrl: "/projects/gigsam.png",
   },
 ] as const;
 
