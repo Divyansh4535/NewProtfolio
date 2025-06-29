@@ -60,10 +60,10 @@ export default function Contact() {
                 Email Me
               </h3>
               <a
-                href="mailto:example@gmail.com"
+                href="mailto:mr.divyanshu.kmr@gmail.com"
                 className="text-blue-600 hover:underline dark:text-blue-400"
               >
-                example@gmail.com
+                mr.divyanshu.kmr@gmail.com
               </a>
             </div>
           </div>

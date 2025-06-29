@@ -37,7 +37,7 @@ export default function Header() {
 
         {/* Logo */}
         <motion.div className="flex items-center border-0 whitespace-nowrap justify-center mx-2">
-          <h2 className="text-orange-500 font-bold text-xl">Suraj Kumar</h2>
+          <h2 className="text-orange-500 font-bold text-xl">Divyanshu Kumar</h2>
         </motion.div>
 
         {/* Right Links */}
@@ -62,7 +62,7 @@ export default function Header() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <h2 className="text-orange-500 font-bold text-xl">Suraj Kumar</h2>
+          <h2 className="text-orange-500 font-bold text-xl">Divyanshu Kumar</h2>
         </motion.div>
 
         {/* Hamburger Menu */}
