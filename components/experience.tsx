@@ -13,6 +13,7 @@ import {
   FaGraduationCap,
   FaBriefcase,
 } from "react-icons/fa";
+import Image from "next/image";
 
 // Enhanced Timeline Component
 const Timeline = ({ experiences }: { experiences: typeof experiencesData }) => {
@@ -175,10 +176,14 @@ const TimelineItem = ({ item, index }: { item: any; index: number }) => {
                 transition={{ duration: 0.5, delay: index * 0.1 + 0.3 }}
                 className="w-16 h-16 rounded-2xl overflow-hidden border-2 border-gray-200/50 dark:border-gray-700/50 bg-white dark:bg-gray-800 p-2 shadow-lg flex-shrink-0"
               >
-                <img
+                <Image
+                  quality={100}
                   src={item.companyLogo}
                   alt={`${item.company} logo`}
                   className="w-full h-full object-contain"
+                  width={64}
+                  height={64}
+                  priority
                 />
               </motion.div>
             )}
