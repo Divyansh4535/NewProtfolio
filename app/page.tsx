@@ -10,7 +10,12 @@ import Skills from "@/components/skills";
 export default function Home() {
   return (
     <main className="flex flex-col items-center px-4">
-      {/* <ParticlesBackground> */}
+      <ParticlesBackground
+      
+      intensity="high"
+      theme="aurora"
+      interactive={true}
+      >
       <Intro />
       <SectionDivider />
       <About />
@@ -18,7 +23,8 @@ export default function Home() {
       <Skills />
       <Experience />
       <Contact />
-      {/* </ParticlesBackground> */}
+      
+      </ParticlesBackground>
     </main>
   );
 }

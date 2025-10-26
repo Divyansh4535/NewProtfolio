@@ -6,7 +6,8 @@ import { FaGithub, FaTwitter } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import { FiMail } from "react-icons/fi";
 import { RiCodeBoxFill } from "react-icons/ri";
-import myImage from "@/public/my.jpg";
+import myImage from "@/public/dk.jpg";
+// import myImage from "@/public/my.jpg";
 import { useEffect, useState } from "react";
 
 const TYPING_INTERVAL = 100;
@@ -74,9 +75,12 @@ export default function Hero() {
   }, [currentText, currentTitleIndex, isDeleting]);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden pt-20 pb-32">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden pt-20 pb-32"
+    >
       {/* Dynamic floating background elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      {/* <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
           style={{
             x: useTransform(floatingX, (x) => x * 0.5),
@@ -102,7 +106,7 @@ export default function Hero() {
           }}
           className="absolute top-1/3 right-1/3 w-96 h-96 border-2 border-dashed border-gray-300/10 rounded-full"
         ></motion.div>
-      </div>
+      </div> */}
 
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center relative z-10">
         {/* Left Column - Content */}
@@ -175,7 +179,7 @@ export default function Hero() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/resume.pdf"
+                href="/CV.pdf"
                 download
                 className="px-5 py-3 sm:px-6 sm:py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-200 rounded-lg font-medium shadow hover:shadow-md transition-all flex items-center justify-center gap-2 group"
               >
@@ -200,7 +204,7 @@ export default function Hero() {
                 },
                 {
                   icon: <FaGithub className="text-xl" />,
-                  href: "https://github.com",
+                  href: "https://github.com/divyansh4535",
                   label: "GitHub",
                   color:
                     "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700",
@@ -252,7 +256,7 @@ export default function Hero() {
                   src={myImage}
                   alt="Professional portrait"
                   fill
-                  className="object-cover object-top"
+                  className="object-cover object-center"
                   quality={100}
                   priority
                 />
@@ -291,7 +295,7 @@ export default function Hero() {
             </div>
 
             {/* Floating dots decoration */}
-            <motion.div
+            {/* <motion.div
               animate={{
                 rotate: [0, 360],
               }}
@@ -301,7 +305,7 @@ export default function Hero() {
                 ease: "linear",
               }}
               className="absolute -top-12 -right-12 w-32 h-32 rounded-full border-2 border-dotted border-gray-400/20"
-            ></motion.div>
+            ></motion.div> */}
           </motion.div>
         </div>
       </div>
@@ -315,12 +319,14 @@ export default function Hero() {
       >
         <div className="flex flex-col items-center">
           <motion.div
-            animate={{ y: [0, 10, 0] }}
+            initial={{ y: "0px" }}
+            animate={{ y: ["0px", "10px", "0px"] }}
             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
             className="w-6 h-10 border-2 border-gray-400 dark:border-gray-600 rounded-full flex justify-center relative"
           >
             <motion.div
-              animate={{ y: [0, 5, 0], opacity: [0.6, 1, 0.6] }}
+              initial={{ y: "0px" }}
+              animate={{ y: ["0px", "5px", "0px"], opacity: [0.6, 1, 0.6] }}
               transition={{
                 repeat: Infinity,
                 duration: 1.5,

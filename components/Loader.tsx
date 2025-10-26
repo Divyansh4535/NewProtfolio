@@ -110,26 +110,15 @@ export default function SplashLoader() {
               className="text-center"
             >
               <motion.h2
-                animate={{
-                  color: colors,
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  repeatType: "reverse",
-                }}
+                animate={{ color: colors[currentPhrase] || colors[0] }}
+                transition={{ duration: 0.8 }}
                 className="text-4xl font-bold mb-2"
               >
                 {motivationalPhrases[currentPhrase]}
               </motion.h2>
               <motion.p
-                animate={{
-                  color: ["#6B7280", "#9CA3AF", "#6B7280"],
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                }}
+                animate={{ color: ["#6B7280", "#9CA3AF", "#6B7280"] }}
+                transition={{ duration: 3, repeat: Infinity }}
                 className="text-lg dark:text-gray-300"
               >
                 Loading your inspiration...
